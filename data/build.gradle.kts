@@ -4,7 +4,6 @@ import com.kizitonwose.calendar.buildsrc.Version
 
 plugins {
     alias(libs.plugins.kotlinJvm)
-    alias(libs.plugins.mavenPublish)
 }
 
 java {
@@ -27,8 +26,4 @@ dependencies {
     testImplementation(libs.test.junit5.api)
     testRuntimeOnly(libs.test.junit5.engine)
     testRuntimeOnly(libs.test.junit.platform.launcher)
-}
-
-mavenPublishing {
-    coordinates(version = Version.android)
 }

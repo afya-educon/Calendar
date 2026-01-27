@@ -11,7 +11,6 @@ plugins {
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.kotlinSerialization)
-    alias(libs.plugins.mavenPublish)
 }
 
 kotlin {
@@ -127,8 +126,4 @@ android {
     dependencies {
         debugImplementation(compose.uiTooling)
     }
-}
-
-mavenPublishing {
-    coordinates(version = Version.multiplatform)
 }

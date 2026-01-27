@@ -7,7 +7,6 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.composeCompiler)
-    alias(libs.plugins.mavenPublish)
 }
 
 android {
@@ -45,8 +44,4 @@ dependencies {
     testImplementation(libs.test.junit5.api)
     testRuntimeOnly(libs.test.junit5.engine)
     testRuntimeOnly(libs.test.junit.platform.launcher)
-}
-
-mavenPublishing {
-    coordinates(version = Version.android)
 }
